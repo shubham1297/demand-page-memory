@@ -6,7 +6,7 @@
 #include<conio.h>
 int main()
 {
-	float x,y,z,p,m,M,N,eff_access_time;
+	float x,y,z,m,p,M,N,eff_access_time;
 	printf("enter the no. of replaced page not modified=");
 	scanf("%f",&x);
 	printf("enter the no. of replaced  page  modified=");
