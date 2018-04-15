@@ -1,3 +1,5 @@
+//Don't copy my code without credit.
+
 #include<stdio.h>
 #include<conio.h>
 int main()
