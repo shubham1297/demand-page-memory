@@ -7,15 +7,16 @@
 int main()
 {
 	float x,y,z,m,p,M,N,eff_access_time;
-	printf("enter the no. of replaced page not modified=");
+	printf("\nEnter all the value in ns \n");
+	printf("\nEnter the no. of replaced page not modified= \n");
 	scanf("%f",&x);
-	printf("enter the no. of replaced  page  modified=");
+	printf("\nEnter the no. of replaced  page  modified=\n");
 	scanf("%f",&y);
-	printf("enter the memory access time=");
+	printf("\nEnter the memory access time=\n");
 	scanf("%f",&z);
-	printf("percentage of page is to be replaced is modified=");
+	printf("\nPercentage of page is to be replaced is modified=\n");
 	scanf("%f",&m);
-	printf("enter the effective access time");
+	printf("\nEnter the effective access time=\n");
 	scanf("%f",&eff_access_time);
 	if(eff_access_time<=200)
 	{
@@ -24,12 +25,15 @@ int main()
      	M=m*0.01;
     	N=1-M;	
  		p=((eff_access_time-z))/((M*y)+(N*x)-z);
-		printf("maximum acceptable page fault rate=%f",p);
+ 		
+		printf("\nMaximum Acceptable page fault rate=%f\n",p);
 		
 	}
 
 else
 {
-printf("maximum acceptable page fault rate for an effective access time is not more than 200 ns");
+     printf("!!!ERROR!!!");
+     printf("maximum acceptable page fault rate for an effective access time is not more than 200 ns");
 }
 }
+
